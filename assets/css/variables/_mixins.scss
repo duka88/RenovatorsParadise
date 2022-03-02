@@ -1,0 +1,280 @@
+@mixin flex-center($align) {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $align;
+}
+
+@mixin flex-start($align) {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $align;
+}
+
+@mixin flex-between($align) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: $align;
+}
+
+@mixin flex-around($align) {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: $align;
+}
+
+@mixin flex-end($align) {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: $align;
+}
+
+@mixin max-width($width) {
+  padding: 0 15px;
+  width: 100%;
+
+  @include screen-min("desk") {
+    max-width: map-get($maxWidth, $width);
+    margin: 0 auto;
+  }
+}
+
+@mixin text-border($color) {
+  text-shadow: -2px -2px 0 $color, 2px -2px 0 $color, -2px 2px 0 $color,
+    2px 2px 0 $color;
+}
+
+@mixin grid($col, $gap) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  grid-gap: $gap;
+}
+
+@mixin img-cover($position) {
+  background-size: cover;
+  background-position: $position;
+  background-repeat: no-repeat;
+}
+
+@mixin gradient($color) {
+  background: rgba($color, 1);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba($color, 1) 10%,
+    rgba(lighten($color, 10%), 1) 38%,
+    rgba(lighten($color, 10%), 1) 58%,
+    rgba($color, 1) 90%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba($color, 1) 10%,
+    rgba(lighten($color, 10%), 1) 38%,
+    rgba(lighten($color, 10%), 1) 58%,
+    rgba($color, 1) 90%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba($color, 1) 10%,
+    rgba(lighten($color, 10%), 1) 38%,
+    rgba(lighten($color, 10%), 1) 58%,
+    rgba($color, 1) 90%
+  );
+}
+
+@mixin img-auto {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@mixin figure($padding) {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  height: 0;
+  padding-bottom: $padding;
+  overflow: hidden;
+}
+
+@mixin img-zoom {
+  overflow: hidden;
+
+  img {
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@mixin img-abs {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@mixin abs-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin font-awesome($icon) {
+  font-family: "Font Awesome 5 Pro";
+  content: $icon;
+}
+
+@mixin svg-icon($icon) {
+  content: "";
+  display: inline-block;
+  mask-image: url($icon);
+  mask-repeat: no-repeat;
+}
+
+@mixin underline-hover($color, $bottom: 0) {
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: $bottom;
+    width: 0;
+    height: 1px;
+    background-color: $color;
+    transition: width 0.2s ease;
+  }
+
+  &:hover {
+    color: $color;
+
+    &:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@mixin underline($width, $color) {
+  position: relative;
+
+  &:after {
+    content: "";
+    width: $width;
+    position: absolute;
+    background-color: $color;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 3px;
+  }
+}
+
+@mixin slick-arrow {
+  // position: absolute;
+  // width: 18px;
+  // height: 28px;
+  // z-index: 3;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // color: $gray-100;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  @include flex-center(center);
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $gray-200;
+  position: absolute;
+  @include screen-min("desk") {
+    width: 48px;
+    height: 48px;
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
+    color: $gray-100;
+
+    @include screen-min("desk") {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@mixin scrollbarX() {
+  overflow-x: auto;
+  scrollbar-color: $gray-200 $gray-100;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background: $gray-200;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $gray-100;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-button:end:increment {
+    display: block;
+    background: transparent;
+  }
+}
+
+@mixin text-border($color) {
+  text-shadow: -2px -2px 0 $color, 2px -2px 0 $color, -2px 2px 0 $color,
+    2px 2px 0 $color;
+}
+
+@mixin screen-min($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin screen-max($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@mixin linear-gradient {
+  background: rgb(65, 97, 100);
+  background: linear-gradient(
+    90deg,
+    rgba(65, 97, 100, 1) 0%,
+    rgba(36, 55, 68, 1) 50%
+  );
+}

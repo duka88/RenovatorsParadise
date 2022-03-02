@@ -1,0 +1,67 @@
+#n_customer {
+    .blog-banner {
+        margin-bottom: 100px;
+    }
+
+    .account-page {
+        .card {
+            border: none;
+
+            label {
+                font-size: 14px;
+                color: $black;
+                font-weight: 500;
+            }
+        }
+
+        .card-header {
+            padding: 0;
+            background-color: $white;
+            border: none;
+        }
+
+        .card-body {
+            padding: 0;
+        }
+
+        .page-title {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .main-btn {
+            width: 100%;
+        }
+
+        .form-link {
+            font-size: 16px;
+            color: $black;
+            font-weight: 400;
+            margin: 10px 0;
+            display: block;
+        }
+    }
+}
+#n_customer_account {
+    .breadcrumbs,
+    .breadcrumbs__nav {
+      padding: 0;
+    }
+  
+    .main__wrap {
+      padding: 70 20px 40px!important;
+      filter: none;
+  
+      @include screen-min('desk') {
+        max-width: 1540px;
+        margin: 0 auto;
+        padding: 70px 0px 40px!important;
+  
+  
+      }
+    }
+  
+}

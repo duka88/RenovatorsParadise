@@ -1,0 +1,106 @@
+// B4 Overrides
+// Color system
+//
+$white: #fff;  //used
+$gray-100: #C4C4C4;  //used
+$gray-200: rgba($gray-100, 0.2); //used
+$gray-300: #acacac; 
+$gray-400: #d0d0d1;
+$gray-500: #e9e7e7;
+$gray-600: #cccdcd;
+$gray-700: #f2f2f2;
+$gray-800: #f9f9f9;
+$gray-900: #919191;
+$black: #000;  //used
+$black2: #363435; 
+
+$brown: #fcf9f4;
+$blue: #415464; //used
+$blue2: #00aeef;
+$blue3: #0b6cd9;
+$indigo: #6610f2;
+$purple: #792f92;
+$red: #DB1A1A;//used
+$red2: #af1515;//used
+$orange: #FF8400;
+$yellow: #ffcc00;
+$green: #349d1c;
+$teal: #20c997;
+$cyan: #17a2b8;
+$grey: #666666;
+
+$box-shadow: 0 0 14px 2px rgb(106 106 106 / 28%);
+
+$primary: $blue;
+$secondary: $gray-200; //Not default B4
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-caret: true;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-hover-media-query: false; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes: true;
+$enable-print-styles: true;
+$enable-validation-icons: false;
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-main: "Barlow", sans-serif;
+
+$font-family-monospace: $font-family-main;
+
+$font-family-base: $font-family-main;
+
+$font-size-base: 0.875rem; // Assumes the browser default, typically `1rem==16px`
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * 0.875);
+
+$h1-font-size: $font-size-base * 1.875;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.3125;
+$h4-font-size: $font-size-base * 1.125;
+$h5-font-size: $font-size-base * 0.9375;
+$h6-font-size: $font-size-base;
+
+$display1-size: 4.5rem;
+$display2-size: 4.125rem;
+$display3-size: 3.375rem;
+$display4-size: 2.625rem;
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: $white;
+$body-color: $gray-900;
+// Links
+//
+// Style anchor elements.
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+// Breadcrumbs
+//
+$breadcrumb-bg: $gray-100;
+
+$breakpoints: (
+  "mob": 480px,
+  "tab": 768px,
+  "desk": 1200px,
+  "deskBig": 1850px,
+) !default;
+
+$maxWidth: (
+  "sm": 1322px,
+  "md": 1538px,
+  "lg": 1886px,
+  "xl": 1920px,
+) !default;

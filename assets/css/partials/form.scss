@@ -1,0 +1,60 @@
+.section  {
+    form {      
+        width: 100%;
+      @include screen-min('desk') {
+            @include flex-between(flex-start);
+        }     
+    }
+
+    .form-row,
+    .form__row,
+    .form-row-50,
+    .form-row-30 {
+        margin: 0 0 35px;
+        width: 100%;
+    
+    }
+    .form-row-50 {
+      @include screen-min('desk') {
+            width: calc(50% - 10px);
+        }
+    }
+    .form-row-30 {
+        @include screen-min('desk') {
+            width: calc(33% - 10px);
+        }
+    }
+    label {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;       
+        margin-bottom: 15px;    
+    }
+
+    input:not(.main-btn):not([type='checkbox']),    
+    select,
+    textarea {
+        min-width: 100%;
+        width: 100%;
+        border: 1px solid $gray-300;
+        padding: 8px 15px;
+        font-size: 16px;
+        outline: none;
+        border-radius: 1px;       
+        
+        &:focus,
+        &:active,
+        &:focus-within{
+           border-color: $yellow;
+        }
+      
+    }
+    .form__info {
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: $gray-100;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+}

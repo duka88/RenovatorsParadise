@@ -1,0 +1,52 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  overscroll-behavior: none;
+
+  &.activeClass {
+    touch-action: none;
+    -ms-touch-action: none;
+    overflow: hidden;
+  }
+
+  body {
+    font-family: $font-family-main;
+    color: $black;
+    overflow-x: hidden;
+    background-color: $white;
+    position: relative;
+    margin: 0;
+    overscroll-behavior: none;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 150vh;
+  z-index: -1;
+  display: block;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: transparent;
+  transition: 0.4s ease-in-out opacity;
+
+  &.activeClass {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+  }
+}

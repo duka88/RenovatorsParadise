@@ -1,0 +1,24 @@
+.jsDropdownWrap {
+    position: relative;
+}
+.jsDropdownTrigger {
+    cursor: pointer;
+}
+.jsDropdown{
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    bottom: -60px;
+    transform: translateY(100%);
+    box-shadow: $box-shadow;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease-in;
+    transition-property: bottom, opacity, visibility;
+
+    &.activeClass {
+        bottom: -0;
+        visibility: visible;
+        opacity: 1;
+    }
+}

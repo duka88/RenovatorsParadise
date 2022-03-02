@@ -1,0 +1,220 @@
+.main-btn {
+  font-size: 16px;  
+  @include flex-center(center);
+  padding: 5px 24px;
+  background-color: $orange;
+  border: 1px solid $orange;
+  text-align: center;
+  width: max-content;
+  transition: 0.4s ease-in-out;
+  transition-property: background-color, color, bottom;
+  color: $white;
+  cursor: pointer;
+  position: relative;
+  &:hover,
+  &:focus,
+  &:active,
+  &.activeClass {
+    color: $white;
+    background-color: darken($orange, 10%);
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 13px;
+  }
+  @include screen-min("desk") {
+    font-size: 21px;
+  }
+  &--black {
+    background-color: $black2;
+    border: 1px solid $black2;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active,
+    &.activeClass {
+      color: $white;
+      background-color: lighten($black2, 10%);
+    }
+    svg {
+      color: $white;
+    }
+  }
+  &--blue {
+    background-color: $blue;
+    border: 1px solid $blue;
+    &:hover,
+    &:focus,
+    &:active,
+    &.activeClass {
+      background-color: lighten($blue, 10%);
+    }    
+  }
+  &--white {
+    background-color: $white;
+    border: 1px solid $black2;
+    color: $black;
+    &:hover,
+    &:focus,
+    &:active,
+    &.activeClass {
+      color: $black;
+      background-color: lighten($white, 10%);
+    }
+    svg {
+      color: $white;
+    }
+  }
+  &--transperent {
+    background-color: transparent;
+    border: 1px solid $white;  
+    svg {
+      color: $white;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &.activeClass {    
+      color: $black;
+      background-color: $white;
+      svg {
+        color: $black;
+      }
+    }
+    
+  }
+
+}
+
+.main-btn--gray {
+  background-color: $gray-200 !important;
+  border-color: $gray-200 !important;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  transition-property: background-color;
+  color: $black !important;
+  font-weight: 500;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.activeClass {
+    color: $black !important;
+    background-color: darken($gray-200, 10%) !important;
+  }
+}
+
+.btn {
+  font-size: 15px;
+  
+  font-weight: 500;
+  display: table;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 0;
+  transition: 0.4s ease-in-out;
+  transition-property: background-color;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.btn-default {
+  background-color: $gray-100 !important;
+  border-color: $black !important;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  transition-property: background-color;
+  color: $black !important;
+  font-weight: 500;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.activeClass {
+    color: $black !important;
+    background-color: darken($gray-100, 10%) !important;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &.activeClass {
+    background-color: darken($white, 10%) !important;
+  }
+}
+.btn-success {
+  background-color: $orange !important;
+  border: 1px solid $orange !important;
+  color: $black !important;
+  border-color: $orange !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.activeClass {
+    background-color: darken($orange, 10%) !important;
+  }
+}
+.btn-primary {
+  background-color: $blue2;
+  border-color: $blue2 !important;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  transition-property: background-color;
+  color: $white !important;
+  font-weight: 500;
+
+  &:active,
+  &:hover {
+    color: $white !important;
+    background-color: darken($blue2, 10%) !important;
+  }
+}
+
+.btn-update {
+  background-color: $gray-200 !important;
+  border: 1px solid $gray-200 !important;
+  color: $black !important;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  transition-property: background-color, color;
+
+  &:active,
+  &:hover,
+  &:focus,
+  &.activeClass {
+    color: $black !important;
+    background-color: darken($gray-200, 10%) !important;
+  }
+}
+
+.btn-danger {
+  color: $white !important;
+}
+
+.read-more {
+  @include flex-center(center);
+  font-size: 12px;
+  
+  line-height: 20px;
+  font-weight: 500;
+  color: $blue2 !important;
+  text-transform: capitalize;
+
+  @include screen-min("tab") {
+    font-size: 18px;
+  }
+
+  svg {
+    width: 12px;
+    height: 12px;
+    color: $blue2;
+    margin-left: 10px;
+
+    @include screen-min("tab") {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.form-group-stars {
+    @include flex-start(center);
+    i {
+        svg {
+            width: 25px;
+            height: 25px;
+            color: $gray-200;
+        }
+        &.fas {
+            svg {
+                color: $yellow;
+            }
+           
+        }
+    }
+}
+.stars-list {
+    svg {
+        width: 25px;
+        height: 25px;
+        color: $yellow;
+    }
+}

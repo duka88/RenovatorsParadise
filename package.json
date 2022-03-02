@@ -1,0 +1,29 @@
+{
+  "name": "RenovatorsParadise",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "svgo": "svgo -f assets/svg/raw -o assets/svg/opt &&  svg-sprite-generate -d assets/svg/opt -o assets/svg/sprite.svg"
+  },
+  "dependencies": {
+    "core-js": "^3.19.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.5.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^10.2.1",
+    "slick-carousel": "^1.8.1",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^2.3.0",
+    "typescript": "^4.6.2"
+  }
+}

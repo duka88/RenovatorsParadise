@@ -1,0 +1,92 @@
+.max-width {
+  @include max-width("lg");
+}
+
+.flex-center {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.devider {
+  width: 100%;
+  height: 1px;
+  background-color: $gray-400;
+  display: block;
+}
+
+.text-red {
+  color: $red !important;
+}
+.text-orange {
+  color: $orange !important;
+}
+.text-yellow {
+  color: $yellow;
+}
+.text-white {
+  color: $white;
+}
+.text-green {
+  color: $green !important;
+}
+.text-gray {
+  color: $gray-300 !important;
+}
+.bg-gray {
+  background-color: rgba($gray-100, 0.2) !important;
+}
+.text-blue {
+  color: $blue !important;
+}
+.text-center {
+  text-align: center!important;
+}
+.width-100 {
+  width: 100%;
+}
+.position-relative {
+  position: relative;
+}
+.tablet-hide {
+  display: none !important;
+}
+.slider-single-item:not(:first-child) {
+  display: none;
+}
+.slick-initialized .slider-single-item {
+  display: block;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mobile-hide {
+  display: none !important;
+  @include screen-min("desk") {
+    display: block !important;
+  }
+}
+
+.desktop-hide {
+  @include screen-min("desk") {
+    display: none !important;
+  }
+}
