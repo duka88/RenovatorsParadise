@@ -1,0 +1,42 @@
+.nav__list {
+    display: none;
+    padding: 0;
+    margin: 0;
+    @include screen-min("desk") {
+        @include flex-between(center);
+    }
+}
+
+.nav__item {
+    list-style: none;
+    margin-right: 25px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.nav__link {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: $default;
+    color: $white;
+}
+
+.nav--header-bottom {
+    display: none;
+    @include screen-min("desk") {
+        @include flex-between(center);
+        .nav__link {
+            font-size: 12px;
+            line-height: 10px;
+            font-weight: $semiBold;
+            text-transform: uppercase;
+        }
+    }
+    @include screen-min("deskBig") {
+        .nav__link {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

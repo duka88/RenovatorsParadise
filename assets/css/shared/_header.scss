@@ -1,0 +1,145 @@
+.header {
+    background-color: $siteBlack;
+    width: 100%;
+}
+
+.header__top {
+    padding: 10px 0;
+    border-bottom: 0.5px solid $white;
+    @include screen-min("desk") {
+        padding: 13px 0;
+    }
+}
+
+.header__text {
+    color: $white;
+    font-weight: $default;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+    @include screen-min("desk") {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+.header__bottom {
+    padding: 6px 0 16px;
+    @include screen-min("desk") {
+        padding: 6px 0;
+    }
+}
+
+.header__bottom-inner {
+    @include flex-between(center);
+    flex-wrap: nowrap;
+}
+
+.header__burger {
+    width: 20px;
+    height: 3px;
+    background-color: $white;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border: 0;
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        background-color: $white;
+        width: 14px;
+        height: 3px;
+        left: 0;
+    }
+    &::before {
+        top: -7px;
+    }
+    &::after {
+        bottom: -7px;
+    }
+    @include screen-min("desk") {
+        margin-right: 20px;
+    }
+}
+
+.header__logo-wrap {
+    max-width: 178px;
+    flex: 0 0 178px;
+    @include screen-min("desk") {
+        max-width: 390px;
+        flex: 0 0 390px;
+    }
+}
+
+.header__logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.header__icon {
+    max-width: 20px;
+    max-height: 20px;
+    fill: $white;
+    vertical-align: middle;  
+    &:nth-of-type(2n) {
+        margin-right: 25px;
+    }
+    @include screen-min("desk") {
+        margin-right: 14px;
+        &:nth-of-type(2n) {
+            margin-right: 14px;
+        }
+    }
+}
+
+.header__icon-text {
+    display: none;
+    @include screen-min("desk") {
+        display: inline-block;
+        color: $white;
+        font-weight: $semiBold;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 10px;
+        margin-right: 25px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    @include screen-min("deskBig") {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.header__icon--desk {
+    display: none;
+    @include screen-min("desk") {
+        display: inline-block;
+    }
+}
+
+.header__phone-icon {
+    max-width: 12px;
+    max-height: 12px;
+    fill: $white;
+    margin-right: 8px;
+}
+
+.header__top-inner {
+    @include flex-between(center);
+}
+
+.header__phone-wrap {
+    display: none;
+    @include screen-min("desk") {
+        @include flex-between(center);
+    }
+}
+
+.header__phone {
+    color: $white;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: $default;
+}

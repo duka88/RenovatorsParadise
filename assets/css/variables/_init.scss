@@ -1,8 +1,11 @@
 html {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;
   overscroll-behavior: none;
+  box-sizing: border-box;
+  overflow-y: auto;
+  width: 100%;
 
   &.activeClass {
     touch-action: none;
@@ -13,11 +16,13 @@ html {
   body {
     font-family: $font-family-main;
     color: $black;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     background-color: $white;
     position: relative;
     margin: 0;
     overscroll-behavior: none;
+    box-sizing: border-box;
+    width: 100%;
 
     a {
       text-decoration: none;
@@ -49,4 +54,24 @@ html {
     visibility: visible;
     z-index: 2;
   }
+}
+
+.wrap {
+  padding: 0 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  // @include max-width("lg") {
+
+  // }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
