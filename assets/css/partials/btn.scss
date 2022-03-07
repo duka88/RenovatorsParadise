@@ -107,15 +107,19 @@
 
 .btn {
   font-size: 15px;
-  
-  font-weight: 500;
-  display: table;
-  padding: 10px 25px;
+  line-height: 40px;
+  max-width: 182px;
+  font-weight: $medium;
+  height: 40px;
+  text-transform: uppercase;
   text-align: center;
   border-radius: 0;
   transition: 0.4s ease-in-out;
   transition-property: background-color;
-  text-transform: capitalize;
+  background-color: $white;
+  padding: 0 57px;
+  color: $black;
+  display: inline-block;
   cursor: pointer;
   position: relative;
   box-shadow: none !important;

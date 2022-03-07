@@ -1,0 +1,13 @@
+.hero {
+    width: 100%;
+    display: none;
+    @include screen-min("desk") {
+        display: block;
+    }
+}
+
+.hero__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
