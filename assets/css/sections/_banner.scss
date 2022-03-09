@@ -1,8 +1,9 @@
 .banner {
     width: 100%;
     min-height: 360px;
-    background-color: grey;
+    background-image: url('~/assets/img/banner-img.png');
     padding: 54px 0;
+    @include img-cover(center);
     @include screen-min("desk") {
         min-height: 560px;
         padding: 100px 0;
@@ -13,6 +14,9 @@
     width: 100%;
     @include screen-min("desk") {
         max-width: 68%;
+    }
+    @include screen-min("deskBig") {
+        max-width: 37%;
     }
 }
 

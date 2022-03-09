@@ -60,9 +60,10 @@ html {
   padding: 0 20px;
   max-width: 100%;
   margin: 0 auto;
-  // @include max-width("lg") {
-
-  // }
+  @include screen-min("desk") {
+    max-width: 1840px;
+    padding: 0;
+  }
 }
 
 .sr-only {

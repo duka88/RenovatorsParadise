@@ -1,0 +1,19 @@
+.popular {
+    padding: 30px 0 43px;
+    @include screen-min("desk") {
+        padding: 63px 0 22px;
+    }
+    .shop-item {
+        flex: 0 0 272px;
+        margin-right: 41px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.popular__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}

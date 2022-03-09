@@ -1,0 +1,31 @@
+.shop-item {
+    background-image: url('~assets/img/shop-item1.png');
+    @include img-cover(center);
+    max-width: 272px;
+}
+
+.shop-item__inner {
+    padding: 0 64px;
+    min-height: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.shop-item__title {
+    font-weight: $bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: $white;
+    text-align: center;
+    @include screen-min("desk") {
+        font-size: 25px;
+        line-height: 38px;
+    }
+}
+
+.shop-item__btn {
+    padding: 0 25px;
+}
