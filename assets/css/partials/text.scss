@@ -5,7 +5,7 @@
   text-transform: uppercase;
   position: relative;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
   &::before {
       content: '';
       position: absolute;
@@ -19,7 +19,7 @@
   @include screen-min("desk") {
       font-size: 30px;
       line-height: 45px;
-      margin-bottom: 45px;
+      margin-bottom: 95px;
       &::before {
           width: 78px;
           bottom: -21px;

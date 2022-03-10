@@ -1,6 +1,9 @@
 .description {
     width: 100%;
-    padding: 50px 0;
+    padding: 10px 0 50px;
+    @include screen-min("desk") {
+        padding: 20px 0 80px;
+    }
 }
 
 .description__inner {

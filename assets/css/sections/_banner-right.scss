@@ -1,0 +1,35 @@
+.banner-right {
+    background-image: url('~assets/img/banner-right.png');
+    @include img-cover(center);
+}
+
+.banner-right__heading {
+    font-weight: $bold;
+    font-size: 30px;
+    line-height: 45px;
+    color: $white;
+    margin: 0 0 23px;
+    @include screen-min("desk") {
+        margin: 0 0 28px;
+        font-size: 50px;
+        line-height: 75px;
+    }
+}
+
+.baner-right__wrap {
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
+    padding: 44px 20px;
+    @include screen-min("desk") {
+        min-height: 560px;
+        justify-content: flex-end;
+    }
+}
+
+.banner-right__inner {
+    @include screen-min("desk") {
+        max-width: 649px;
+        padding: 97px 30px;
+    }
+}

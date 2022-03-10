@@ -5,7 +5,7 @@
 }
 
 .shop-item__inner {
-    padding: 0 64px;
+    padding: 0 50px;
     min-height: 289px;
     display: flex;
     flex-direction: column;
@@ -28,4 +28,10 @@
 
 .shop-item__btn {
     padding: 0 25px;
+}
+
+.shop-item--large {
+    .shop-item__inner {
+        min-height: 435px;
+    }
 }

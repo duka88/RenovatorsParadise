@@ -3,12 +3,12 @@
         <div class="wrap">
             <h2 class="popular__heading section-title">POPULAR CATEGORIES</h2>
             <div class="popular__items">
-                <ShopItem />
-                <ShopItem />
-                <ShopItem />
-                <ShopItem />
-                <ShopItem />
-                <ShopItem />
+                <ShopItem title="RECYCLED TIMBER" />
+                <ShopItem title="DOORS" />
+                <ShopItem title="WINDOWS" />
+                <ShopItem title="MANTLES & FIRE GRATES" />
+                <ShopItem title="LIGHTING" />
+                <ShopItem title="HARDWARE" />
             </div>
         </div>
     </section>

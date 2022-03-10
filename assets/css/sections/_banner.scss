@@ -13,10 +13,7 @@
 .banner__inner {
     width: 100%;
     @include screen-min("desk") {
-        max-width: 68%;
-    }
-    @include screen-min("deskBig") {
-        max-width: 37%;
+        max-width: 650px;
     }
 }
 
