@@ -6,6 +6,7 @@
 		<ShopAll />
 		<Description />
 		<BannerRight />
+		<Contact />
 	</div>
 </template>
 
@@ -16,6 +17,7 @@
 	import Popular from "@/components/home/popular.vue";
 	import ShopAll from "@/components/home/shop-all.vue";
 	import BannerRight from "@/components/home/banner-right.vue";
+	import Contact from "@/components/home/contact.vue";
 	export default {
 		name: "IndexPage",
 		components: {
@@ -24,7 +26,8 @@
 			Description,
 			Popular,
 			ShopAll,
-			BannerRight
+			BannerRight,
+			Contact
 		}
 	};
 </script>
