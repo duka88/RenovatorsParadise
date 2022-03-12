@@ -1,0 +1,55 @@
+.contact-item__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item {
+    margin-bottom: 55px;
+    @include screen-min("desk") {
+        max-width: 401px;
+        margin: 0 50px;
+    }
+}
+
+.contact-item__icon {
+    max-width: 37px;
+    max-height: 37px;
+    margin-bottom: 20px;
+    @include screen-min("desk") {
+        max-width: 51px;
+        max-height: 51px;
+    }
+}
+
+.contact-item__title {
+    font-weight: $semiBold;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 5px;
+    text-align: center;
+    @include screen-min("desk") {
+        font-size: 25px;
+        line-height: 38px;
+    }
+}
+
+.contact-item__text {
+    font-weight: $default;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    @include screen-min("desk") {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.contact-item__link {
+    text-decoration: underline;
+    font-weight: $medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: $siteBlack;
+}

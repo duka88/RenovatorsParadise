@@ -1,0 +1,10 @@
+.contact__inner {
+    padding: 53px 0;
+    @include screen-min("desk") {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 128px 0 113px;
+        margin: 0 50px;
+    }
+}

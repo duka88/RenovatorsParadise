@@ -1,9 +1,9 @@
 <template>
     <div class="contact-item">
-       {{title}}
-        <!-- <svg>
-			<use xlink:href="~/assets/svg/sprite.svg#bars-solid"></use>
-		</svg> -->
+       <!-- {{title}} -->
+        <svg>
+          <use xlink:href="~/assets/svg/sprite.svg#bars-solid"></use>
+        </svg>
     </div>
 </template>
 
