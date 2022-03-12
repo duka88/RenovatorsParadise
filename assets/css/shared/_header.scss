@@ -17,6 +17,7 @@
     font-size: 11px;
     line-height: 16px;
     margin: 0;
+    text-align: center;
     @include screen-min("desk") {
         font-size: 13px;
         line-height: 20px;
@@ -71,8 +72,13 @@
     }
 }
 
+.header__burger-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header__logo {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 

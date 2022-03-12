@@ -35,30 +35,32 @@
         <div class="header__bottom">
             <div class="wrap">
                <div class="header__bottom-inner">
-                    <div class="header__burger-wrap">
-                        <button class="header__burger" type="button">
-                            <span class="sr-only">Burger menu</span>
-                        </button>
+                    <div class="header__burger-nav-wrap">
+                        <div class="header__burger-wrap">
+                            <button class="header__burger" type="button">
+                                <span class="sr-only">Burger menu</span>
+                            </button>
+                        </div>
+                        <nav class="nav nav--header-bottom">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="/">SHOP ALL</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="/">NEW IN</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="/">CLEARANCE</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="/">CUSTOM MADE</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="/">SELLERS</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                     <nav class="nav nav--header-bottom">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a class="nav__link" href="/">SHOP ALL</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="/">NEW IN</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="/">CLEARANCE</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="/">CUSTOM MADE</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="/">SELLERS</a>
-                            </li>
-                        </ul>
-                    </nav>
                     <div class="header__logo-wrap">
                         <img class="header__logo" src="~/assets/img/RP_logo_white_transparent.png" alt="logo">
                     </div>
