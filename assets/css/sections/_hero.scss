@@ -4,10 +4,11 @@
     display: none;
     min-height: 384px;
     margin-bottom: 23px;
-    margin-top: 222px;
+    margin-top: 140px;
     @include img-cover(center);
-    @include screen-min("desk") {
+    @include screen-min("deskBig") {
         display: block;
+        margin-top: 222px;
     }
 }
 

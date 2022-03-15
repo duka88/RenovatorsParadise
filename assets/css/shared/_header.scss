@@ -70,7 +70,7 @@
 .header__logo-wrap {
     max-width: 178px;
     flex: 0 0 178px;
-    @include screen-min("desk") {
+    @include screen-min("deskBig") {
         max-width: 390px;
         flex: 0 0 390px;
     }
