@@ -30,6 +30,10 @@
     width: 100%;
     background-color: $white;
     z-index: 20;
+    visibility: hidden;
+    @include screen-min("desk") {
+        max-width: 418px;
+    }
 }
 
 .dropdown__list {
