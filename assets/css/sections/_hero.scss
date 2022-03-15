@@ -4,6 +4,7 @@
     display: none;
     min-height: 384px;
     margin-bottom: 23px;
+    margin-top: 222px;
     @include img-cover(center);
     @include screen-min("desk") {
         display: block;
