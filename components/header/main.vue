@@ -161,18 +161,24 @@
                         <img class="header__logo" src="~/assets/img/RP_logo_white_transparent.png" alt="logo">
                     </div>
                     <div class="header__icons-wrap">
-                        <svg class="header__icon header__icon--desk">
-                            <use xlink:href="~/assets/svg/sprite.svg#location-dot-solid"></use>
-                        </svg>
-                        <span class="header__icon-text">VISIT OUR SHOWROOM</span>
-                        <svg class="header__icon">
-                            <use xlink:href="~/assets/svg/sprite.svg#magnifying-glass-solid"></use>
-                        </svg>
-                        <span class="header__icon-text">Search</span>
-                        <svg class="header__icon">
+                        <button class="header__icon-btn" type="button">
+                            <svg class="header__icon header__icon--desk">
+                                <use xlink:href="~/assets/svg/sprite.svg#location-dot-solid"></use>
+                            </svg>
+                            <span class="header__icon-text">VISIT OUR SHOWROOM</span>
+                        </button>
+                        <button class="header__icon-btn" type="button">
+                                <svg class="header__icon">
+                                <use xlink:href="~/assets/svg/sprite.svg#magnifying-glass-solid"></use>
+                                </svg>
+                                <span class="header__icon-text">Search</span>
+                        </button>
+                        <button class="header__icon-btn" type="button">
+                            <svg class="header__icon">
                             <use xlink:href="~/assets/svg/sprite.svg#cart-shopping-solid"></use>
                         </svg>
                         <span class="header__icon-text">CART</span>
+                        </button>
                    </div>
                </div>
             </div>

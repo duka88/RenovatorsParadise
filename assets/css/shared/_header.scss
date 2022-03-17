@@ -102,6 +102,11 @@
     }
 }
 
+.header__icon-btn {
+    background: transparent;
+    border: 0;
+}
+
 .header__icon-text {
     display: none;
     @include screen-min("desk") {
