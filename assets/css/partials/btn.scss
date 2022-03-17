@@ -108,7 +108,7 @@
 .btn {
   font-size: 15px;
   line-height: 40px;
-  max-width: 182px;
+  max-width: 210px;
   font-weight: $medium;
   height: 40px;
   text-transform: uppercase;
@@ -124,6 +124,18 @@
   position: relative;
   box-shadow: none !important;
   outline: none !important;
+  @include screen-min("deskBig") {
+    max-width: 182px;
+  }
+  &:hover {
+    filter: brightness(85%);
+  }
+}
+button {
+  cursor: pointer;
+  &:hover {
+    filter: brightness(85%);
+  }
 }
 .btn-default {
   background-color: $gray-100 !important;

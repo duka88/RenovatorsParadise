@@ -30,10 +30,11 @@ html {
 
     a {
       text-decoration: none;
-
+      cursor: pointer;
       &:hover {
         text-decoration: none;
         transition: color 0.3s ease-in-out;
+        filter: brightness(85%);
       }
     }
   }
