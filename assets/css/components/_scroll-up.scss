@@ -1,0 +1,21 @@
+.scroll-up {
+    width: 54px;
+    height: 54px;
+    position: fixed;
+    bottom: 122px;
+    border: 0;
+    right: 20px;
+    background-color: $white;
+    @include screen-min("desk") {
+        right: 40px;
+    }
+}
+
+.scroll-up__icon {
+    width: 55px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}

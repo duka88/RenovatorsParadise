@@ -1,13 +1,17 @@
 <template>
-	<div>
+	<main class="main">
 		<Hero />
 		<Banner />
 		<Popular />
 		<ShopAll />
 		<Description />
+		<NewIn />
 		<BannerRight />
+		<NewIn />
+		<TwoImg />
 		<Contact />
-	</div>
+		<ScrollUp />
+	</main>
 </template>
 
 <script>
@@ -18,6 +22,9 @@
 	import ShopAll from "@/components/home/shop-all.vue";
 	import BannerRight from "@/components/home/banner-right.vue";
 	import Contact from "@/components/home/contact.vue";
+	import ScrollUp from "@/components/scroll-up/main.vue";
+	import TwoImg from "@/components/home/two-img.vue";
+	import NewIn from "@/components/home/new-in.vue";
 	export default {
 		name: "IndexPage",
 		components: {
@@ -27,7 +34,10 @@
 			Popular,
 			ShopAll,
 			BannerRight,
-			Contact
+			Contact,
+			TwoImg,
+			ScrollUp,
+			NewIn
 		}
 	};
 </script>

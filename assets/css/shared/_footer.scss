@@ -6,12 +6,17 @@
 .footer__wrap {
     @include screen-min("desk") {
         display: grid;
-        grid-gap: 30px 50px;
-        grid-template-columns: 1fr 4fr 1fr;
+        grid-gap: 30px 100px;
+        grid-template-columns: 0.2fr 2fr 1fr;
     }
     @include screen-min("deskBig") {
-        grid-gap: 30px 150px;
+        grid-gap: 30px 50px;
     }
+}
+
+.footer-form {
+    justify-self: end;
+    width: 90%;
 }
 
 .footer-nav__item {

@@ -1,0 +1,14 @@
+.new-in {
+    padding: 42px 0 59px;
+    background-color: $grayLight;
+    @include screen-min("desk") {
+        padding: 58px 0 105px;
+    }
+}
+
+.new-in__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -17.5px;
+}

@@ -84,7 +84,7 @@
                         </svg>
                      </h4>
                      <ul class="footer-nav__list">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="/">Monday to Friday: 8am - 5pm</a></li>
+                        <li class="footer-nav__item">Monday to Friday: 8am - 5pm</li>
                         <li class="footer-nav__item">Saturday: 9am - 4:30pm</li>
                         <li class="footer-nav__item">Product Categories</li>
                         <li class="footer-nav__item">Closed Sunday and Public Holidays</li>
@@ -154,21 +154,21 @@
          </div>
          </div>
          <div class="footer-bottom">
-               <ul class="footer-bottom__menu">
-                   <li class="footer-bottom__menu-item">
-                   <a href="/" data-toggle="modal" class="footer-bottom__text">Terms of Use</a>
-                   </li>
-                   <li class="footer-bottom__menu-item">
-                   <a href="/" data-toggle="modal" class="footer-bottom__text">Terms of Sale</a>
-                   </li>
-                   <li class="footer-bottom__menu-item">
-                   <a href="/" class="footer-bottom__text">Privacy Policy</a>
-                   </li>
-               </ul>
-               <p class="footer-bottom__text">
-                   Copyright © 2021 · Renovators Paradise 
-               </p>
-               </div> 
+            <ul class="footer-bottom__menu">
+                <li class="footer-bottom__menu-item">
+                <a href="/" data-toggle="modal" class="footer-bottom__text">Terms of Use</a>
+                </li>
+                <li class="footer-bottom__menu-item">
+                <a href="/" data-toggle="modal" class="footer-bottom__text">Terms of Sale</a>
+                </li>
+                <li class="footer-bottom__menu-item">
+                <a href="/" class="footer-bottom__text">Privacy Policy</a>
+                </li>
+            </ul>
+            <p class="footer-bottom__text">
+                Copyright © 2021 · Renovators Paradise 
+            </p>
+            </div> 
       </div>
    </footer>
 </template>

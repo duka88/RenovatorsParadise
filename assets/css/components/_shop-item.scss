@@ -5,11 +5,11 @@
 }
 
 .shop-item__inner {
-    padding: 0 50px;
+    padding: 0 50px 64px 50px;
     min-height: 289px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
 }
@@ -20,6 +20,7 @@
     line-height: 33px;
     color: $white;
     text-align: center;
+    margin:  0 0 40px;
     @include screen-min("desk") {
         font-size: 25px;
         line-height: 38px;
@@ -33,5 +34,9 @@
 .shop-item--large {
     .shop-item__inner {
         min-height: 435px;
+        padding: 0 50px 86px 50px;
+    }
+    .shop-item__title {
+        margin: 0 0 60px;
     }
 }

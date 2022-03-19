@@ -1,0 +1,50 @@
+.two-img {
+    display: flex;
+    flex-direction: column;
+    @include screen-min("desk") {
+        flex-direction: row;
+    }
+}
+
+.two-img__item {
+    background-image: url('~assets/img/two-img1.png');
+    min-height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    @include img-cover(center);
+    @include screen-min("desk") {
+        flex: 0 0 50%;
+        max-width: 50%;
+        min-height: 560px;
+        padding-bottom: 55px;
+    }
+}
+
+.two-img__item--second {
+    background-image: url('~assets/img/two-img2.png');
+    .two-img__inner {
+        text-align: end;
+    }
+}
+
+.two-img__inner {
+    padding: 0 20px;
+    @include screen-min("desk") {
+        padding: 0 90px;
+    }
+}
+
+.two-img__heading {
+    font-weight: $bold;
+    color: $white;
+    margin: 0 0 20px;
+    font-size: 30px;
+    line-height: 45px;
+    @include screen-min("desk") {
+        font-size: 50px;
+        line-height: 75px;
+        margin: 0 0 28px;
+    }
+}
