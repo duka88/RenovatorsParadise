@@ -1,101 +1,8 @@
 <template>
     <header class="header">
-        <div class="dropdown">
-            <div class="dropdown__top">
-                <div class="wrap">
-                    <div class="dropdown__btn-wrap">
-                        <button class="dropdown__button" type="button">MAIN MENU</button>
-                        <span class="dropdown__close" aria-hidden="true"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="dropdown__bottom">
-                <div class="wrap">
-                     <ul class="dropdown__list">
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">SHOP ALL</a>
-                            <div class="dropdown__link-overlay" role="presentation"></div>
-                        </li>
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">NEW IN</a>
-                            <div class="dropdown__link-overlay" role="presentation"></div>
-                        </li>
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">CUSTOM MADE</a>
-                            <div class="dropdown__link-overlay" role="presentation"></div>
-                        </li>
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">SHOP ALL</a>
-                            <div class="dropdown__link-overlay" role="presentation"></div>
-                        </li>
-                         <li class="dropdown__item dropdown__item--diff">
-                            <a class="dropdown__link" href="/">
-                                CLEARANCE
-                                <span class="dropdown__link-small">Save up to 50%</span>
-                            </a>
-                        </li>
-                        <li class="dropdown__item dropdown__item--small">
-                            <a class="dropdown__link" href="/">
-                                <span class="dropdown__link-text">DELIVERY</span>
-                                <svg class="dropdown__icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#truck-fast-solid"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="dropdown__item dropdown__item--small">
-                            <a class="dropdown__link" href="/">
-                                <span class="dropdown__link-text">SELLERS</span>
-                                <svg class="dropdown__icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#handshake-solid"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="dropdown__item dropdown__item--small">
-                            <a class="dropdown__link" href="/">
-                                <span class="dropdown__link-text">REFFERALS</span>
-                                <svg class="dropdown__icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#user-group-solid"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="dropdown__cards">
-                        <a class="dropdown__card" href="/">
-                            <div class="dropdown__card-inner">
-                                <svg class="dropdown__card-icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#user-solid"></use>
-                                </svg>
-                                <span class="dropdown__card-text">My Account</span>
-                            </div>
-                        </a>
-                        <a class="dropdown__card" href="/">
-                            <div class="dropdown__card-inner">
-                                <svg class="dropdown__card-icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#clock-solid"></use>
-                                </svg>
-                                <span class="dropdown__card-text">Opening hours</span>
-                            </div>
-                        </a>
-                        <a class="dropdown__card" href="/">
-                            <div class="dropdown__card-inner">
-                                <svg class="dropdown__card-icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#location-dot-solid"></use>
-                                </svg>
-                                <span class="dropdown__card-text">Visit our Showroom</span>
-                            </div>
-                        </a>
-                        <a class="dropdown__card" href="tel:0370026570">
-                            <div class="dropdown__card-inner">
-                                <svg class="dropdown__card-icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#phone-solid"></use>
-                                </svg>
-                                <span class="dropdown__card-text">03 7002 6570</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- <Dropdown /> -->
+        <!-- <DropdownSearch /> -->
+        <DropdownShop />
         <div class="header__top">
             <div class="wrap">
                 <div class="header__top-inner">
@@ -187,7 +94,16 @@
 </template>
 
 <script>
+import Dropdown from "@/components/dropdown/main.vue";
+import DropdownSearch from "@/components/dropdown-search/main.vue";
+import DropdownShop from "@/components/dropdown-shop/main.vue";
+
 export default {
-  name: "headerComponent"
+  name: "dropdown",
+  components: {
+        Dropdown,
+        DropdownSearch,
+        DropdownShop
+    }
 };
 </script>

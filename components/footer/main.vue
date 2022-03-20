@@ -96,7 +96,7 @@
                         </svg>
                      </h4>
                      <ul class="footer-nav__list">
-                        <li class="footer-nav__item"><a class="footer-nav__link" href="/">32 Futura Road</a></li>
+                        <li class="footer-nav__item">32 Futura Road</li>
                         <li class="footer-nav__item">Keysborough VIC 3173</li>
                         <li class="footer-nav__item"><a class="footer-nav__link" href="tel:(03)70026570">(03) 7002 6570</a></li>
                      </ul>
