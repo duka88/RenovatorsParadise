@@ -1,0 +1,31 @@
+.banner--center {
+    background-image: url('~/assets/img/banner-center.png');
+    margin-top: 137px;
+    min-height: 428px;
+    padding: 25vh 0;
+    @include screen-min("deskBig") {
+        margin-top: 224px;
+        min-height: 636px;
+    }
+}
+
+.banner-center__heading {
+    font-weight: $semiBold;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    color: $white;
+    @include screen-min("deskBig") {
+        font-size: 35px;
+        line-height: 52px;
+        margin-bottom: 15px;
+    }
+}
+
+.banner-center__text {
+    font-weight: $default;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: $white;
+}

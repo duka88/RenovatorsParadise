@@ -1,11 +1,17 @@
 <template>
-<div>
-
-</div>
+<main class="main">
+  <BannerCenter />
+</main>
 </template>
 
 <script>
+import BannerCenter from "@/components/home/banner-center.vue";
+
 export default {
-  name: 'CustomTimberJoiner'
+
+  name: 'CustomTimberJoiner',
+  components: {
+			BannerCenter,
+		}
 }
 </script>
