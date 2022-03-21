@@ -11,6 +11,6 @@
 
 <script>
 	export default {
-		name: "banner-center",
+		name: "banner-center"
 	};
 </script>

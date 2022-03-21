@@ -1,10 +1,15 @@
-.contact__inner {
+.contact {
     padding: 53px 0;
+    @include screen-min("desk") {
+        padding: 128px 0 113px;
+    }
+}
+
+.contact__inner {
     @include screen-min("desk") {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 128px 0 113px;
         margin: 0 auto;
         max-width: 1400px;
     }

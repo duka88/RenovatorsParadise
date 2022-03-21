@@ -65,7 +65,9 @@
                         </nav>
                     </div>
                     <div class="header__logo-wrap">
-                        <img class="header__logo" src="~/assets/img/RP_logo_white_transparent.png" alt="logo">
+                       <a class="header__logo-link" href="/">
+                            <img class="header__logo" src="~/assets/img/RP_logo_white_transparent.png" alt="logo">
+                       </a>
                     </div>
                     <div class="header__icons-wrap">
                         <button class="header__icon-btn" type="button">

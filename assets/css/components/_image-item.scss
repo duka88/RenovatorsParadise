@@ -1,0 +1,15 @@
+.image-item-wrap {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    @include screen-min("desk") {
+        max-width: calc(33.33% - 20px);
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 0 10px 15px;
+    }
+}
+
+.image-item {
+    width: 100%;
+    height: auto;
+}
