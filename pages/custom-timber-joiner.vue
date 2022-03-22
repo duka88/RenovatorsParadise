@@ -5,6 +5,7 @@
     <Custom />
     <Contact />
     <CloserLook />
+    <Customers />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import Description from "@/components/home/description.vue";
 import Custom from "@/components/home/custom.vue";
 import Contact from "@/components/home/contact.vue";
 import CloserLook from "@/components/home/closer-look.vue";
+import Customers from "@/components/home/customers.vue";
 
 export default {
 
@@ -23,7 +25,8 @@ export default {
       Description,
       Contact,
       Custom,
-      CloserLook
+      CloserLook,
+      Customers
 		}
 }
 </script>

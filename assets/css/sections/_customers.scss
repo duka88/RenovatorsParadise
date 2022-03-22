@@ -1,0 +1,12 @@
+.customers {
+    padding: 40px 0;
+    @include screen-min("desk") {
+       padding: 28px 0 105px;
+    }
+}
+
+
+.customers__inner {
+    @include flex-center(center);
+    margin: 0 -17.5px;
+}

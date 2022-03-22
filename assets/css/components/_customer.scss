@@ -1,0 +1,64 @@
+.customer {
+    box-shadow: 0px 4px 32px 7px rgba(0, 0, 0, 0.14);
+    max-width: 201px;
+    text-align: center;
+    @include screen-min("desk") {
+        max-width: 340px;
+        flex: 0 0 340px;
+        margin: 0 17.5px;
+        margin-bottom: 40px;
+    }
+}
+
+.customer__inner {
+    padding: 30px 24px;
+    @include screen-min("desk") {
+       padding: 52px 43px 46px;
+    }
+}
+
+.customer__img-wrap {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 19px;
+    @include screen-min("desk") {
+        width: 62px;
+        height: 62px;
+    }
+}
+
+.customer__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.customer__heading {
+    font-weight: $semiBold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 11px;
+    color: $gold;
+}
+
+.customer__date {
+    font-weight: $default;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 23px;
+    display: block;
+}
+.customer__text {
+    font-weight: $default;
+    font-size: 12px;
+    line-height: 18px;
+    color: $gold;
+    margin: 0;
+    @include screen-min("desk") {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
