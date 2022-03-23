@@ -89,3 +89,10 @@ button {
 .main {
   position: relative;
 }
+
+.main--product {
+  margin-top: 140px;
+  @include screen-min("deskBig") {
+      margin-top: 224px;
+  }
+}

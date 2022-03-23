@@ -1,0 +1,80 @@
+.product-section__wrap {
+    @include screen-min("desk") {
+        @include flex-around(center);
+        padding: 91px 0 162px;
+    }
+}
+
+.product-section__inner {
+    padding: 25px 0;
+    @include screen-min("desk") {
+        max-width: 610px;
+    }
+}
+
+.product-section__info {
+    font-weight: $medium;
+    font-size: 10px;
+    line-height: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $white;
+    background-color: $siteBlack;
+    text-transform: uppercase;
+    padding: 5px 6px;
+    @include screen-min("desk") {
+        top: 10px;
+    }
+}
+
+.product-section__title {
+    font-weight: $default;
+    font-size: 25px;
+    line-height: 34px;
+    color: $gold;
+    margin: 0 0 7px;
+    position: relative;
+    @include screen-min("desk") {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+.product-section__tag {
+    font-weight: $semiBold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+    display: inline-block;
+    @include screen-min("desk") {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.product-section__price {
+    font-weight: $semiBold;
+    font-size: 30px;
+    line-height: 45px;
+    color: $gold;
+    margin: 0 0 12px;
+    @include screen-min("desk") {
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+
+.product-section__num {
+    font-weight: $default;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 26px;
+}
+
+.product-section__text {
+    font-weight: $thin;
+    font-size: 13px;
+    line-height: 20px;
+}

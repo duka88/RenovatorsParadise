@@ -5,9 +5,9 @@
 		<Popular />
 		<ShopAll />
 		<Description />
-		<NewIn />
+		<NewIn title="FEATURED PRODUCTS" />
 		<BannerRight />
-		<NewIn />
+		<NewIn title="NEW IN" />
 		<TwoImg />
 		<Contact />
 		<ScrollUp />
