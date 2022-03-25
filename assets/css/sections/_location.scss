@@ -1,0 +1,120 @@
+.location {
+    padding: 28px 0 56px;
+    @include screen-min("desk") {
+        padding: 49px 0 54px;
+    }
+}
+
+.location__heading {
+    font-weight: $semiBold;
+    font-size: 22px;
+    line-height: 33px;
+    color: $siteBlack;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    @include screen-min("desk") {
+        color: $gold;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+.location-top__logo {
+    max-width: 45px;
+    margin-right: 20px;
+}
+
+.location-top {
+    @include flex-start(center);
+    margin-bottom: 25px;
+    @include screen-min("desk") {
+        margin-bottom: 54px;
+    }
+}
+
+.location-top__heading {
+    font-weight: $semiBold;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+    @include screen-min("desk") {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.location-top__text {
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0;
+    @include screen-min("desk") {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.location__icon {
+    width: 23px;
+    height: 31px;
+    color: $siteBlack;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+
+.location__down-icon {
+    width: 20px;
+    height: 20px;
+    fill: $siteBlack;
+    @include screen-min("desk") {
+        display: none;
+    }
+}
+
+.location__heading-wrap {
+    @include flex-between(center);
+    position: relative;
+    padding: 20px 0 35px;
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: $gray950;
+        height: 1px;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    @include screen-min("desk") {
+        padding: 34px 0 30px;
+    }
+}
+
+.location__iframe {
+    min-height: 149px;
+    margin-bottom: 36px;
+    @include screen-min("desk") {
+     min-height: 224px;
+     margin-bottom: 45px;
+    }
+}
+
+.location__text {
+    font-weight: $default;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 34px;
+}
+
+.location__bottom {
+    padding-bottom: 50px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: $gray950;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}
