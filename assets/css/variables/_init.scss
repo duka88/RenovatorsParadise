@@ -65,9 +65,14 @@ html {
   padding: 0 20px;
   max-width: 100%;
   margin: 0 auto;
-  @include screen-min("deskBig") {
+  @include screen-min("desk") {
     max-width: 1840px;
-    padding: 0;
+  }
+}
+
+.wrap--small {
+  @include screen-min("desk") {
+    max-width: 1530px;
   }
 }
 

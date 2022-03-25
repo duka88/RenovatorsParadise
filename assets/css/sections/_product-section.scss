@@ -1,6 +1,11 @@
+.product-section {
+    background-color: $grayLight;
+}
+
 .product-section__wrap {
+    padding: 39px 0 20px;
     @include screen-min("desk") {
-        @include flex-around(center);
+        @include flex-between(center);
         padding: 91px 0 162px;
     }
 }
@@ -22,7 +27,7 @@
     color: $white;
     background-color: $siteBlack;
     text-transform: uppercase;
-    padding: 5px 6px;
+    padding: 5px 11px;
     @include screen-min("desk") {
         top: 10px;
     }
@@ -77,4 +82,53 @@
     font-weight: $thin;
     font-size: 13px;
     line-height: 20px;
+}
+
+.product-section__text-wrap {
+    margin-bottom: 26px;
+    @include screen-min("desk") {
+        margin-bottom: 176px;
+    }
+}
+
+.product-section__btn-first {
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.product-section__btn {
+    width: 100%;
+    margin-bottom: 13px;
+    @include screen-min("desk") {
+        max-width: calc(50% - 8px);
+    }
+}
+
+.product-section__btn-wrap {
+    margin-bottom: 20px;
+    @include screen-min("desk") {
+        @include flex-between(center);
+        margin-bottom: 32px;
+    }
+}
+
+.product-section__icon {
+    width: 20px;
+    height: 18px;
+    fill: $white;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+.product-section__small-text {
+    font-weight: $default;
+    font-size: 13px;
+    line-height: 20px;
+    color: $siteBlack;
+}
+
+.product-section__small-icon {
+    width: 20px;
+    height: 17px;
+    margin-right: 12px;
 }

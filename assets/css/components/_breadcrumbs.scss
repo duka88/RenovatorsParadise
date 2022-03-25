@@ -1,0 +1,24 @@
+.breadcrumbs {
+    padding: 12px 0;
+    display: flex;
+    margin: 0;
+    @include screen-min("desk") {
+        padding: 14px 0;
+    }
+}
+
+.breadcrumbs__item {
+    list-style: none;
+}
+
+.breadcrumbs__link {
+    font-weight: $default;
+    font-size: 10px;
+    line-height: 15px;
+    color: $siteBlack;
+    @include screen-min("desk") {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
