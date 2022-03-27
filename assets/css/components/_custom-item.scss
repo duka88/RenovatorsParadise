@@ -2,6 +2,7 @@
     background-image: url('~assets/img/custom-item1.png');
     min-height: 323px;
     max-width: 201px;
+    min-width: 201px;
     @include img-cover(center);
     display: flex;
     flex-direction: column;
@@ -16,10 +17,13 @@
 }
 
 .custom-item__inner {
-    padding: 22px;
+    padding: 10px;
     background: rgba(37, 37, 37, 0.5);
+    height: 100px;
+    @include flex-center(center);
     @include screen-min("desk") {
         padding: 47px 20px;
+        height: 150px;
     }
 }
 
@@ -29,6 +33,7 @@
     line-height: 27px;
     text-align: center;
     color: $white;
+    margin: 0;
     @include screen-min("desk") {
         font-size: 20px;
         line-height: 30px;

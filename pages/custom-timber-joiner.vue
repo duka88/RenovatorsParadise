@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <BannerCenter />
+    <BannerCenter  title="CUSTOM TIMBER JOINERY" text="Homepage / Custom" />
     <Description />
     <Custom />
     <Contact />

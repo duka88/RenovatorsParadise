@@ -2,12 +2,12 @@
 	<section class="custom">
 		<div class="wrap">
 			<div class="custom__inner">
-				<CustomItem />
-				<CustomItem />
-				<CustomItem />
-				<CustomItem />
-				<CustomItem />
-				<CustomItem />
+				<CustomItem title="CUSTOM BENCH SEAT" />
+				<CustomItem title="CUSTOM BENCH TOPS" />
+				<CustomItem title="CUSTOM TABLES" />
+				<CustomItem title="CUSTOM BUILT BARN DOORS" />
+				<CustomItem title="CUSTOM RUSTIC BARN DOORS" />
+				<CustomItem title="BESPOKE FRONT DOORS" />
 			</div>
 		</div>
 	</section>

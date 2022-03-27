@@ -1,0 +1,32 @@
+.custom-wrap {
+    padding-bottom: 40px;
+    @include screen-min("desk") {
+        padding-bottom: 46px;
+    }
+}
+.custom-wrap__inner {
+    @include flex-center(center);
+    margin: 0 -20px;
+    .custom-item {
+        flex: 0 0 272px;
+        margin: 0 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.custom-wrap__text {
+    font-weight: $default;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding: 34px 0;
+    margin: 0;
+    @include screen-min("desk") {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 65%;
+        margin: 0 auto;
+        padding: 47px 0;
+    }
+}
+

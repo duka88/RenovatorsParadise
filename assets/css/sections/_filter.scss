@@ -1,0 +1,82 @@
+.filter {
+    @include flex-center(center);
+}
+
+.filter__part {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.filter__part--first {
+    @include screen-min("desk") {
+        @include flex-start(center);
+    }
+}
+
+.filter__part--second {
+    @include screen-min("desk") {
+        @include flex-end(center);
+        .filter__text {
+            margin-right: 18px;
+        }
+    }
+}
+
+.filter__mob-btn {
+    font-weight: $default;
+    font-size: 15px;
+    line-height: 22px;
+    color: $siteBlack;
+    border: 1px solid $siteBlack;
+    background-color: $white;
+    padding: 11px 17px;
+    min-width: 90%;
+    transition: ease 0.5s;
+    @include flex-between(center);
+    @include screen-min("desk") {
+        width: 232px;
+        min-width: auto;
+    }
+}
+
+.filter__mob-btn--diff {
+    justify-content: center;
+    .filter__icon {
+        margin-right: 10px;
+    }
+    @include screen-min("desk") {
+        display: none;
+    }
+}
+
+.filter__icon {
+    width: 10px;
+    height: 6.5px;
+    vertical-align: middle;
+}
+
+.filter__text {
+    display: none;
+    @include screen-min("desk") {
+        display: block;
+    }
+}
+
+.filter__list {
+    @include flex-between(center);
+}
+
+.filter__item {
+    list-style: none;
+    margin-right: 21px;
+}
+
+.filter__btn {
+    background-color: $white;
+    border: 0;
+    padding: 15px 18px;
+    &:hover {
+        background-color: $white;
+        box-shadow: 0px 0px 32px 7px rgba(0, 0, 0, 0.14);
+    }
+}

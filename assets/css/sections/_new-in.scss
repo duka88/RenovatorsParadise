@@ -7,8 +7,6 @@
 }
 
 .new-in__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   @include flex-center(center);
     margin: 0 -17.5px;
 }
