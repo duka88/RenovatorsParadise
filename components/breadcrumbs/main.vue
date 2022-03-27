@@ -7,7 +7,7 @@
         <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="">HomMantles & Fire Grates /</a>
         </li>
-        <li class="breadcrumbs__item">
+        <li class="breadcrumbs__item breadcrumbs__item--active">
             <a class="breadcrumbs__link" href="">Recycled Timber Mantle</a>
         </li>
         </ul>

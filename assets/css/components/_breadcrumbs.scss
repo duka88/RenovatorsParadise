@@ -9,6 +9,13 @@
 
 .breadcrumbs__item {
     list-style: none;
+    margin-left: 4px;
+}
+
+.breadcrumbs__item--active {
+    .breadcrumbs__link {
+        pointer-events: none;
+    }
 }
 
 .breadcrumbs__link {
