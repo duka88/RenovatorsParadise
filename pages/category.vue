@@ -43,6 +43,32 @@
                         <use xlink:href="~/assets/svg/sprite.svg#chevron-down-solid"></use>
                     </svg>
                 </button>
+                <ul class="filter__checkbox-list">
+                  <li class="filter__checkbox-item">
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">Timber</label>
+                  </li>
+                   <li class="filter__checkbox-item">                  
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">Hardwood</label>
+                  </li>
+                   <li class="filter__checkbox-item">                  
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">Cedar</label>
+                  </li>
+                   <li class="filter__checkbox-item">                 
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">Metal</label>
+                  </li>
+                  <li class="filter__checkbox-item">
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">Ceramics</label>
+                  </li>
+                  <li class="filter__checkbox-item">
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">Plastic</label>
+                  </li>
+                </ul>
               </li>
                <li class="filter__item">
                 <button class="filter__btn" type="button">
@@ -67,12 +93,38 @@
                         <use xlink:href="~/assets/svg/sprite.svg#chevron-down-solid"></use>
                     </svg>
                 </button>
+                 <ul class="filter__checkbox-list">
+                  <li class="filter__checkbox-item">
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">$0 - $50</label>
+                  </li>
+                   <li class="filter__checkbox-item">                  
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">$50 - $100</label>
+                  </li>
+                   <li class="filter__checkbox-item">                  
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">$100 - $250</label>
+                  </li>
+                   <li class="filter__checkbox-item">                 
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">$250 - $500</label>
+                  </li>
+                  <li class="filter__checkbox-item">
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">$500 - $1000</label>
+                  </li>
+                  <li class="filter__checkbox-item">
+                    <input type="checkbox" id="timber" name="scales">
+                    <label for="timber">$1000 - </label>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
           <div class="filter__part filter__part--second">
             <span class="filter__text">Sort by</span>
-              <button class="filter__btn filter__mob-btn" type="button">
+              <button class="filter__btn filter__btn--diff filter__mob-btn" type="button">
                 <span>Default</span>
                 <svg class="filter__icon">
                       <use xlink:href="~/assets/svg/sprite.svg#chevron-down-solid"></use>
@@ -111,6 +163,24 @@
           <BuyItem />
           <BuyItem />
       </div>
+      <ul class="pagination">
+        <li class="pagination__item pagination__item--active">
+          <button class="pagination__btn" type="button">1</button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn" type="button">2</button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn" type="button">3</button>
+        </li>
+         <li class="pagination__item">
+          <button class="pagination__btn" type="button">
+            <svg class="pagination__icon">
+                  <use xlink:href="~/assets/svg/sprite.svg#chevron-down-solid"></use>
+              </svg>
+          </button>
+        </li>
+      </ul>
     </div>
     <Contact />
   </main>
@@ -123,12 +193,12 @@ import Contact from "@/components/home/contact.vue";
 import BuyItem from "@/components/buy-item/main.vue";
 
 export default {
-  name: 'Category',
+  name: "Category",
   components: {
     BannerCenter,
     CustomItem,
     Contact,
     BuyItem
   }
-}
+};
 </script>
