@@ -1,0 +1,33 @@
+.product-table {
+    background-color: $white;
+    tr {
+        padding: 10px 0;
+        border-top: 1px solid $gray950;
+    }
+    // thead {
+    //     border-bottom: 1px solid $gray950;
+    // }
+}
+
+.product-table__img {
+    max-width: 53px;
+}
+
+.product-table__bold {
+    font-weight: $semiBold;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.product-table__text {
+    font-weight: $default;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.product-table__head {
+    font-weight: $semiBold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}

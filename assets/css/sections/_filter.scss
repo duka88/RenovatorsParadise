@@ -122,6 +122,10 @@
 
 .pagination {
     @include flex-center(center);
+    padding: 15px 0;
+    @include screen-min("desk") {
+       padding: 30px 0;
+    }
 }
 
 .pagination__item {
@@ -139,8 +143,12 @@
     font-weight: $semiBold;
     font-size: 22px;
     line-height: 33px;
-    width: 54px;
-    height: 54px;
+    width: 47px;
+    height: 47px;
+    @include screen-min("desk") {
+        width: 54px;
+        height: 54px;
+    }
 }
 
 .pagination__item--active {
@@ -148,8 +156,12 @@
 }
 
 .pagination__icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     transform: rotate(-90deg);
     vertical-align: middle;
+    @include screen-min("desk") {
+        width: 20px;
+        height: 20px;
+    }
 }
