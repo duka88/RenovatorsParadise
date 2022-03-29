@@ -26,8 +26,15 @@
 
 .product-table__img {
     max-width: 53px;
-    display: block;
     margin: auto;
+    display: block;
+}
+
+.product-table__head--mob {
+    display: none;
+    @include screen-min("desk") {
+        display: table-cell;
+    }
 }
 
 .product-table__bold {
@@ -76,6 +83,19 @@
     width: 15px;
     background-color: transparent;
     border: 1px solid $siteBlack;
+  }
+
+  .product-table__head--empty {
+    @include screen-min("desk") {
+        display: none;
+    }
+  }
+
+  .product-table__img--hide {
+    display: none;
+    @include screen-min("desk") {
+        display: block;
+    }
   }
   
   .product-table__container input:checked ~ .product-table__checkmark {

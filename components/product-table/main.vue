@@ -3,19 +3,20 @@
         <table class="product-table">
         <thead>
             <tr>
-                <td><img class="product-table__img" src="~/assets/img/img.png" alt="Shop item"></td>
+                <td class="product-table__head--mob"><img class="product-table__img" src="~/assets/img/img.png" alt="Shop item"></td>
                 <td class="product-table__head">Details</td>
-                <td class="product-table__head">Size (mm)</td>
-                <td class="product-table__head">specs</td>
+                <td class="product-table__head product-table__head--empty"></td>
+                <td class="product-table__head product-table__head--mob">Size (mm)</td>
+                <td class="product-table__head product-table__head--mob">specs</td>
                 <td class="product-table__head">whishlist</td>
-                <td class="product-table__head">stock#</td>
-                <td class="product-table__head">price</td>
+                <td class="product-table__head product-table__head--mob">stock#</td>
+                <td class="product-table__head product-table__head--mob">price</td>
                 <td class="product-table__head">enquire</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
+                <td class="product-table__img--hide"><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
                 <td><p class="product-table__text">Recycled Timber Mantle Enquiry Text</p></td>
                 <td><p class="product-table__text">1285 width x 1780 height</p></td>
                 <td><p class="product-table__text">268 L / M</p></td>
@@ -34,7 +35,7 @@
                 </td>
             </tr>
             <tr>
-                <td><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
+                <td class="product-table__img--hide"><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
                 <td><p class="product-table__text">Recycled Timber Mantle Enquiry Text</p></td>
                 <td><p class="product-table__text">1285 width x 1780 height</p></td>
                 <td><p class="product-table__text">268 L / M</p></td>
@@ -53,7 +54,7 @@
                 </td>
             </tr>
             <tr>
-                <td><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
+                <td class="product-table__img--hide"><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
                 <td><p class="product-table__text">Recycled Timber Mantle Enquiry Text</p></td>
                 <td><p class="product-table__text">1285 width x 1780 height</p></td>
                 <td><p class="product-table__text">268 L / M</p></td>
@@ -72,7 +73,7 @@
                 </td>
             </tr>
             <tr>
-                <td><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
+                <td class="product-table__img--hide"><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
                 <td><p class="product-table__text">Recycled Timber Mantle Enquiry Text</p></td>
                 <td><p class="product-table__text">1285 width x 1780 height</p></td>
                 <td><p class="product-table__text">268 L / M</p></td>
@@ -91,7 +92,7 @@
                 </td>
             </tr>
             <tr>
-                <td><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
+                <td class="product-table__img--hide"><img class="product-table__img" src="~/assets/img/product-slider-image.png" alt="Shop item"></td>
                 <td><p class="product-table__text">Recycled Timber Mantle Enquiry Text</p></td>
                 <td><p class="product-table__text">1285 width x 1780 height</p></td>
                 <td><p class="product-table__text">268 L / M</p></td>
