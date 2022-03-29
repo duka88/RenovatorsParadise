@@ -1,16 +1,33 @@
 .product-table {
     background-color: $white;
-    tr {
-        padding: 10px 0;
-        border-top: 1px solid $gray950;
+    border-collapse: collapse;
+    padding: 5px;
+    display: block;
+    max-height: 377px;
+    overflow-y: scroll;
+    td {
+        padding: 10px 5px;
     }
-    // thead {
-    //     border-bottom: 1px solid $gray950;
-    // }
+    thead {
+    tr {
+        border-bottom: 1px solid $gray950;
+    }
+    }
+    .product-section__small-icon {
+        display: block;
+        margin: auto;
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid $gray950;
+        }
+    }
 }
 
 .product-table__img {
     max-width: 53px;
+    display: block;
+    margin: auto;
 }
 
 .product-table__bold {
@@ -30,4 +47,57 @@
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
+    min-width: 70px;
 }
+
+.product-table__container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+  }
+  
+  .product-table__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .product-table__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 1px solid $siteBlack;
+  }
+  
+  .product-table__container input:checked ~ .product-table__checkmark {
+    background-color: $white;
+  }
+  
+  .product-table__checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  
+  .product-table__container input:checked ~ .product-table__checkmark:after {
+    display: block;
+  }
+  
+  .product-table__container .product-table__checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid $black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
