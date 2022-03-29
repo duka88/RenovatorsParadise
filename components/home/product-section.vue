@@ -14,7 +14,7 @@
                         </div>
                         <span class="product-section__price">$375.00</span>
                         <p class="product-section__nums">1285 mm width x 1780h mm height</p>
-                        <!-- <ProductTable /> -->
+                        <ProductTable />
                         <p class="product-section__text">Recycled timber mantle from Sandringham home. Hardwood timber that’s been painted white. Hole size – 915 w x 915 h Top shelf – 1360 w</p>
                     </div>
                     <button class="btn btn--dark product-section__btn-first">
