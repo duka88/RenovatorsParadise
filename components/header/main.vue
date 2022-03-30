@@ -1,8 +1,9 @@
 <template>
     <header class="header">
-        <!-- <Dropdown /> -->
-        <!-- <DropdownSearch /> -->
+        <!-- <Dropdown />
+        <DropdownSearch /> -->
         <DropdownShop />
+        <DropdownForm />
         <div class="header__top">
             <div class="wrap">
                 <div class="header__top-inner">
@@ -99,13 +100,15 @@
 import Dropdown from "@/components/dropdown/main.vue";
 import DropdownSearch from "@/components/dropdown-search/main.vue";
 import DropdownShop from "@/components/dropdown-shop/main.vue";
+import DropdownForm from "@/components/dropdown-form/main.vue";
 
 export default {
   name: "dropdown",
   components: {
         Dropdown,
         DropdownSearch,
-        DropdownShop
+        DropdownShop,
+        DropdownForm
     }
 };
 </script>
