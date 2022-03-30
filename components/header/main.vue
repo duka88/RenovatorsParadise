@@ -1,9 +1,9 @@
 <template>
     <header class="header">
-        <!-- <Dropdown />
-        <DropdownSearch /> -->
-        <DropdownShop />
-        <DropdownForm />
+        <!-- <Dropdown /> -->
+        <!-- <DropdownSearch /> -->
+        <!-- <DropdownShop /> -->
+        <!-- <DropdownForm /> -->
         <div class="header__top">
             <div class="wrap">
                 <div class="header__top-inner">
