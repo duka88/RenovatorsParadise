@@ -1,5 +1,5 @@
 <template>
-    <div class="peoduct-table-wrap">
+    <div class="product-table-wrap">
         <table class="product-table">
         <thead>
             <tr>
