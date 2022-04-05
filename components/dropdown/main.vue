@@ -12,50 +12,54 @@
                 <div class="dropdown__wrap">
                      <ul class="dropdown__list">
                         <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">SHOP ALL</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">shop all</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                         <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">NEW IN</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">NEW IN</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                         <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">CUSTOM MADE</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">CUSTOM MADE</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                         <li class="dropdown__item">
-                            <a class="dropdown__link" href="/">SHOP ALL</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">CUSTOM MADE</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                          <li class="dropdown__item dropdown__item--diff">
                             <a class="dropdown__link" href="/">
-                                CLEARANCE
-                                <span class="dropdown__link-small">Save up to 50%</span>
                             </a>
+                            <span class="dropdown__item-text">CLEARANCE</span>
+                            <span class="dropdown__link-small">Save up to 50%</span>
                         </li>
                         <li class="dropdown__item dropdown__item--small">
                             <a class="dropdown__link" href="/">
-                                <span class="dropdown__link-text">DELIVERY</span>
-                                <svg class="dropdown__icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#truck-fast-solid"></use>
-                                </svg>
                             </a>
+                            <span class="dropdown__link-text">DELIVERY</span>
+                            <svg class="dropdown__icon">
+                                <use xlink:href="~/assets/svg/sprite.svg#truck-fast-solid"></use>
+                            </svg>
                         </li>
                         <li class="dropdown__item dropdown__item--small">
                             <a class="dropdown__link" href="/">
-                                <span class="dropdown__link-text">SELLERS</span>
-                                <svg class="dropdown__icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#handshake-solid"></use>
-                                </svg>
                             </a>
+                            <span class="dropdown__link-text">SELLERS</span>
+                            <svg class="dropdown__icon">
+                                <use xlink:href="~/assets/svg/sprite.svg#handshake-solid"></use>
+                            </svg>
                         </li>
                         <li class="dropdown__item dropdown__item--small">
                             <a class="dropdown__link" href="/">
-                                <span class="dropdown__link-text">REFFERALS</span>
-                                <svg class="dropdown__icon">
-                                    <use xlink:href="~/assets/svg/sprite.svg#user-group-solid"></use>
-                                </svg>
                             </a>
+                            <span class="dropdown__link-text">REFFERALS</span>
+                            <svg class="dropdown__icon">
+                                <use xlink:href="~/assets/svg/sprite.svg#user-group-solid"></use>
+                            </svg>
                         </li>
                     </ul>
                     <div class="dropdown__cards">

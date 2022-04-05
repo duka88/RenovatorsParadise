@@ -17,19 +17,23 @@
                 <div class="dropdown__wrap">
                      <ul class="dropdown__list">
                         <li class="dropdown__item dropdown__item--thin">
-                            <a class="dropdown__link" href="/">RECYCLED TIMBER</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">RECYCLED TIMBER</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                         <li class="dropdown__item dropdown__item--thin">
-                            <a class="dropdown__link" href="/">DOORS</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">DOORS</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                         <li class="dropdown__item dropdown__item--thin">
-                            <a class="dropdown__link" href="/">WINDOWS</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">WINDOWS</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                         <li class="dropdown__item dropdown__item--thin">
-                            <a class="dropdown__link" href="/">MANTLES & FIRE GRATES</a>
+                            <a class="dropdown__link" href="/"></a>
+                            <span class="dropdown__item-text">MANTLES & FIRE GRATES</span>
                             <div class="dropdown__link-overlay" role="presentation"></div>
                         </li>
                     </ul>
