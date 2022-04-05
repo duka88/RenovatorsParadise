@@ -64,7 +64,7 @@
                                 <td class="dropdown-form__table-text">1285 width x 1789 height</td>
                                 <td class="dropdown-form__table-text dropdown-form__table-text--nowrap">268L / M</td>
                                 <td class="dropdown-form__table-text">
-                                    <label class="dropdown-form__checkbox-label">
+                                    <label class="dropdown-form__checkbox-label dropdown-form__table-text--nowrap">
                                         <input class="dropdown-form__checkbox" type="checkbox">
                                         Add Message
                                     </label>
@@ -76,7 +76,7 @@
                                 <td class="dropdown-form__table-text">1285 width x 1789 height</td>
                                 <td class="dropdown-form__table-text dropdown-form__table-text--nowrap">268L / M</td>
                                 <td class="dropdown-form__table-text">
-                                    <label class="dropdown-form__checkbox-label">
+                                    <label class="dropdown-form__checkbox-label dropdown-form__table-text--nowrap">
                                         <input class="dropdown-form__checkbox" type="checkbox">
                                         Add Message
                                     </label>
@@ -88,7 +88,7 @@
                                 <td class="dropdown-form__table-text">1285 width x 1789 height</td>
                                 <td class="dropdown-form__table-text dropdown-form__table-text--nowrap">268L / M</td>
                                 <td class="dropdown-form__table-text">
-                                    <label class="dropdown-form__checkbox-label">
+                                    <label class="dropdown-form__checkbox-label dropdown-form__table-text--nowrap">
                                         <input class="dropdown-form__checkbox" type="checkbox">
                                         Add Message
                                     </label>
