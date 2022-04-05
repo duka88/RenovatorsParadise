@@ -2,7 +2,7 @@
     <header class="header">
         <!-- <Dropdown /> -->
         <!-- <DropdownSearch /> -->
-        <DropdownShop />
+        <!-- <DropdownShop /> -->
         <!-- <DropdownForm /> -->
         <div class="header__top">
             <div class="wrap">
