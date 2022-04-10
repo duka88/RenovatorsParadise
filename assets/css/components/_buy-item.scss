@@ -1,14 +1,14 @@
 .buy-item {
-    max-width: 200px;
-    flex: 0 0 200px;
+    // max-width: 200px;
+    // flex: 0 0 200px;
     background-color: $white;
     box-shadow: 0px 0px 32px 7px rgba(0, 0, 0, 0.14);
-    margin: 0 17.5px;
-    margin-bottom: 40px;
-    @include screen-min("desk") {
-        flex: 0 0 340px;
-        max-width: 340px;
-    }
+    // margin: 0 17.5px;
+    // margin-bottom: 40px;
+    // @include screen-min("desk") {
+    //     flex: 0 0 340px;
+    //     max-width: 340px;
+    // }
     @include screen-min("deskBig") {
        min-height: 498px;
     }
@@ -45,8 +45,7 @@
 }
 
 .buy-item__tag-wrap {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between(center);
     margin-bottom: 8px;
     @include screen-min("desk") {
         margin-bottom: 15px;

@@ -135,7 +135,8 @@
         </div>
       </div>
    </div>
-    <div class="buy-item-wrap">
+      <div class="buy-item-wrap">
+    <div class="wrap">
       <div class="buy-item-wrap__inner">
           <BuyItem />
           <BuyItem />
@@ -181,6 +182,7 @@
           </button>
         </li>
       </ul>
+    </div>
     </div>
     <Contact />
   </main>

@@ -9,4 +9,14 @@
 .new-in__inner {
    @include flex-center(center);
     margin: 0 -17.5px;
+    .buy-item {
+        max-width: 42%;
+        flex: 0 0 42%;
+        margin: 0 10px 30px;
+        @include screen-min("desk") {
+            flex: 0 0 340px;
+            max-width: 340px;
+            margin: 0 17.5px 40px;
+        }
+     }
 }
